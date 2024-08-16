@@ -1,0 +1,36 @@
+.product-thumbnail{
+	display:none;
+}
+.cart-item{
+	margin-left:40px;
+}
+.remove-items-container {
+	margin-top:-5px;
+    margin-bottom: 10px;
+	position:absolute;
+}
+
+.remove-item {
+    color: #ff0000; /* Red color for remove icon */
+    text-decoration: none;
+    font-size: 20px; /* Adjust size of the icon */
+    display: inline-block; /* Ensures proper spacing */
+    margin-right: 10px; /* Adjust this value to increase or decrease the gap */
+}
+
+.remove-item:last-child {
+    margin-right: 0; /* Removes the margin from the last item */
+}
+
+.remove-item .remove-icon {
+    display: inline-block;
+    font-size: 25px; 
+	margin-botton:20px:
+}
+	/* Size of the icon *
+                      
+}
+
+.remove-item:hover .remove-icon {
+    color: #cc0000; /* Darker red for hover effect */
+}

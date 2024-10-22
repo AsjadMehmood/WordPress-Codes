@@ -1,0 +1,14 @@
+.cqoc_container{
+    display: flex;
+}
+
+.quantity {
+    display: none;
+}
+.cqoc_product_name{
+    color: #00F88A;
+    font-size: 16px;
+}
+.woocommerce-page table.shop_table {
+    width: 90%;
+}

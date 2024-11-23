@@ -1,0 +1,35 @@
+//body
+
+body {
+    overflow-x: hidden;
+}
+
+//Container Custom CSS
+
+selector {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+//Mobile
+
+body {
+    overflow-x: hidden;
+}
+
+html, body {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .form-container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}

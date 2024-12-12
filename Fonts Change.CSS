@@ -1,0 +1,15 @@
+/* General Text - Work Sans */
+body, p, span, a, li, ol, ul, dl, dt, dd, 
+input, textarea, select, button, label, 
+fieldset, legend, caption, th, td, code, pre, 
+figure, figcaption, blockquote, cite, kbd, samp {
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+/* Headings and Accents - Poppins */
+h1, h2, h3, h4, h5, h6, header, footer, 
+nav, aside, section, article, details, summary, 
+strong, b, em, i, u, mark, small, sub, sup, th, 
+.qoute, .highlight, .accent, .callout {
+    font-family: 'Poppins', sans-serif !important;
+}

@@ -1,3 +1,5 @@
+//Elementor
+
 .cqoc_container{
     display: flex;
 }
@@ -11,4 +13,27 @@
 }
 .woocommerce-page table.shop_table {
     width: 90%;
+}
+
+
+// WordPress Checkout
+
+.cqoc_container{
+    display: flex;
+}
+
+.quantity {
+    display: none;
+}
+.cqoc_product_name{
+  color: #00F88A;
+  font-size: 16px;
+	margin-top: -3px;
+}
+.woocommerce-page table.shop_table {
+    width: 90%;
+}
+
+a.remove::before {
+	line-height:1;
 }

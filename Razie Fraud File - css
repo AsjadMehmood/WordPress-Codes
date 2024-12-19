@@ -1,0 +1,56 @@
+#nf-form-title-1{
+	display: none;
+}
+
+#nf-form-1-cont > div > div.nf-form-layout > form > div > div.nf-before-form-content > nf-section > div{
+	display: none;
+}
+
+.nf-field-label{
+	display: none;
+}
+
+.nf-field-container {
+    box-sizing: border-box;
+}
+
+#nf-field-1.ninja-forms-field.nf-element{
+	background-color: #ffffff !important;
+	color: #000000;
+}
+
+
+#nf-field-2.ninja-forms-field.nf-element{
+	background-color: #ffffff !important;
+	color: #000000;
+}
+
+.nf-form-content .list-select-wrap .nf-field-element>div, .nf-form-conten, .nf-form-content textarea {
+	background-color: #ffffff !important;
+	color: #000000 !important;
+}
+
+#nf-field-4-wrap > div.nf-field-element{
+	display: flex;
+	justify-content: center;
+}
+
+.nf-form-content button, .nf-form-content input[type=button], .nf-form-content input[type=submit] {
+    background: #fff !important;
+border: 1px solid #051b39 !important;
+    color: #051b39 !important;
+    padding-left: 60px;
+    padding-right: 60px;
+		font-family: roboto;
+		font-size : 13px;
+		font-weight : 500;
+}
+
+.nf-form-content button, .nf-form-content input[type=button], .nf-form-content input[type=submit]:hover {
+    background: #051b39 !important;
+border: 1px solid #051b39 !important;
+    color: #fff !important;
+		font-family: roboto;
+		font-size : 13px;
+		font-weight : 500;
+}

@@ -34,6 +34,10 @@
     width: 90%;
 }
 
+table.woocommerce-checkout-review-order-table .product-name {
+    width: 70%;
+}
+
 a.remove::before {
 	line-height:1;
 }

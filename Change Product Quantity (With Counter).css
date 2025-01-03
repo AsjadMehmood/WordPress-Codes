@@ -1,0 +1,32 @@
+.cqoc_container{
+    display: flex;
+}
+
+
+.cqoc_product_name{
+  color: #025CB7;
+  font-size: 16px;
+	margin-top: -3px;
+}
+.woocommerce-page table.shop_table {
+    width: 100%;
+}
+
+table.woocommerce-checkout-review-order-table .product-name {
+    width: 100%;
+}
+
+a.remove::before {
+	line-height:1;
+}
+
+#order_review > table > tbody > tr > td.product-name{
+    display: ruby-text;
+}
+
+#order_review > table > tbody > tr > td.product-name > div.quantity.buttons_added{
+width:36%;
+}
+#order_review > table > tbody > tr > td.product-name > div.cqoc_container{
+width:50%;
+}

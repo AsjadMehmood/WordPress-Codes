@@ -1,0 +1,23 @@
+/* Hide on desktop (screen width 1024px and above) */
+.hide-desk {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .hide-desk {
+        display: none; /* Hidden on desktop */
+    }
+    .hide-mobile {
+        display: block; /* Visible on desktop */
+    }
+}
+
+/* Hide on mobile (screen width below 1024px) */
+@media (max-width: 1023px) {
+    .hide-mobile {
+        display: none; /* Hidden on mobile */
+    }
+    .hide-desk {
+        display: block; /* Visible on mobile */
+    }
+}

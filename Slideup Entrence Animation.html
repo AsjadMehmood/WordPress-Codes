@@ -1,0 +1,45 @@
+class >>> reveal-text <<<
+
+
+<!-- Usa una sola versione aggiornata di GSAP e ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Se vuoi vedere i marker per il debug, aggiungi markers:true (rimuovili in produzione)
+  const scrollTriggerConfig = {
+    trigger: null,         // verrà impostato per ogni elemento
+    start: "top 80%",      // l'animazione partirà quando l'elemento raggiunge l'80% della viewport
+    toggleActions: "play none none reverse",
+    // markers: true       // scommenta per vedere i marker
+  };
+
+  // Seleziona tutti gli elementi che devono avere l'effetto
+  const revealContainers = document.querySelectorAll(".reveal-text");
+
+  revealContainers.forEach((container) => {
+    // Assicurati che l'elemento sia inizialmente invisibile (opzionale, se non già definito in CSS)
+    gsap.set(container, { autoAlpha: 0 });
+
+    // Crea una timeline con ScrollTrigger
+    let tl = gsap.timeline({
+      scrollTrigger: Object.assign({}, scrollTriggerConfig, { trigger: container })
+    });
+
+    tl.to(container, { autoAlpha: 1, duration: 0.2 }) // Fade-in iniziale
+      .from(container, {
+        duration: 1.8,
+        y: 200,
+        skewY: 5,
+        ease: "rough.out",
+        stagger: { amount: 0.05 }
+      });
+  });
+
+  // In caso di layout dinamico (es. con Elementor) potrebbe essere utile un refresh
+  window.addEventListener("load", () => {
+    ScrollTrigger.refresh();
+  });
+</script>
